@@ -325,10 +325,6 @@ html {
   flex-wrap: wrap;
 }
 
-.column {
-  border: dashed red 1px;
-}
-
 .small-1 {
   flex-basis: 8.3333333333%;
 }
@@ -396,8 +392,8 @@ body {
   border: 1px solid black;
   border-radius: 20px;
   max-width: fit-content;
-  padding: 20px;
-  margin: 20px;
+  padding: 25px;
+  margin: 25px;
   box-shadow: 10px 10px 0px 0px #000000;
 }
 
@@ -420,13 +416,13 @@ body {
 }
 
 .content {
-  color: rgba(0, 0, 0, 0.514);
+  color: hsl(0, 0%, 50%);
 }
 .content h1 {
   font-size: large;
   font-weight: 800;
   margin: 10px 0px 10px 0px;
-  color: black;
+  color: hsl(0, 0%, 0%);
 }
 
 .author {

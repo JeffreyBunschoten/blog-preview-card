@@ -8,8 +8,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     flex-wrap: wrap;
 }
 
-.column {border: dashed red 1px;}
-
 @for $i from 1 through 12 {
     $w:calc($i / 12) * 100%;
     .small-#{$i} {flex-basis: $w;}	
@@ -18,9 +16,9 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     display: flex;
     flex-direction: column;
-    background-color: hsl(47, 88%, 63%);
-    font-size: 16px;
-    font-family: 'Figtree', sans-serif;
+    background-color: $mybackground_outside;
+    font-size: $myFont_size;
+    font-family: $myFont_family;
     font-size: smaller;
 }
 
@@ -31,13 +29,13 @@ body {
     justify-content: center;
     flex-basis: 50%;
 
-    background-color: white;
+    background-color: $mybackground_inside;
     border: 1px solid black;
     border-radius: 20px;
     
     max-width: fit-content;
-    padding: 20px;
-    margin: 20px;
+    padding: 25px;
+    margin: 25px;
 
     box-shadow: 10px 10px 0px 0px #000000;
 }
@@ -49,7 +47,7 @@ body {
 }
 
 .tag {
-    background-color: hsl(47, 88%, 63%);
+    background-color: $mybackground_outside;
     min-width: 35%;
     text-align: center;
     margin: 10px 0px 10px 0px;
@@ -65,10 +63,10 @@ body {
         font-size: large;
         font-weight: 800;
         margin: 10px 0px 10px 0px;
-        color: black;
+        color: hsl(0, 0%, 0%);
     }
 
-    color: rgba(0, 0, 0, 0.514);
+    color: $contenttext_transparancy;
 }
 
 .author {
