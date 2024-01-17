@@ -1,12 +1,9 @@
 @import 'normalize.scss';
 @import 'small.scss';
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
 
 
-@media only screen and (min-width: 768px) {
-    @import 'medium.scss';
-} /* endof media query*/
 
-
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 375px) {
     @import 'big.scss';
 } /* endof media query*/

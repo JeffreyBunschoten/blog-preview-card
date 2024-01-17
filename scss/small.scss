@@ -18,15 +18,66 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: yellow;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    font-size: smaller;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-basis: 50%;
 
     background-color: white;
-    padding: 25px;
-    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    
+    max-width: fit-content;
+    padding: 20px;
+    margin: 20px;
+
+    box-shadow: 10px 10px 0px 0px #000000;
+}
+
+.illustration {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    background-color: hsl(47, 88%, 63%);
+    min-width: 35%;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+
+.published {
+    margin: 10px 0px 10px 0px;
+}
+
+.content {
+    h1 {
+        font-size: large;
+        font-weight: 800;
+        margin: 10px 0px 10px 0px;
+        color: black;
+    }
+
+    color: rgba(0, 0, 0, 0.514);
+}
+
+.author {
+    .authorpic {
+        max-width: 20%;
+    }
+    display: flex;
+    gap: 20px;
+    font-size: smaller;
+    align-items: center;
+    justify-content: flex-start;
 }
